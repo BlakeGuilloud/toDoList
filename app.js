@@ -38,7 +38,6 @@ var page = {
       ////////// DELETE BUTTON WITHIN A SUBMIT BUTTON???? WTF!?! /////
       $('.toDoList').on('click', '.delete', function(event){
         $(this).closest('article').remove();
-        console.log(toDoId);
         toDoData.splice(toDoId, 1); ///// NEEDS TO ONLY REMOVE THE SELECTED ID ///
         $('.navBar').html(toDoData.length + ' items to do');
       });
